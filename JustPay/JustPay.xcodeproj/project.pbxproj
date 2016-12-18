@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		461D9D831DF5AC5E007F721A /* JPConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D9D821DF5AC5E007F721A /* JPConstants.swift */; };
+		461D9D851DF5ACD0007F721A /* JPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D9D841DF5ACD0007F721A /* JPRequestManager.swift */; };
+		461D9D871DF5ACE2007F721A /* JPResponseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D9D861DF5ACE2007F721A /* JPResponseManager.swift */; };
+		461D9D891DF5B383007F721A /* JPServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D9D881DF5B383007F721A /* JPServerManager.swift */; };
+		461D9D8C1DF5B5CF007F721A /* JPUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D9D8B1DF5B5CF007F721A /* JPUser.swift */; };
+		463444561DE2ABC700366C04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463444551DE2ABC700366C04 /* AppDelegate.swift */; };
+		463444581DE2ABC700366C04 /* JPLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463444571DE2ABC700366C04 /* JPLoginVC.swift */; };
+		4634445B1DE2ABC700366C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463444591DE2ABC700366C04 /* Main.storyboard */; };
+		4634445E1DE2ABC700366C04 /* JustPay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4634445C1DE2ABC700366C04 /* JustPay.xcdatamodeld */; };
+		463444601DE2ABC700366C04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4634445F1DE2ABC700366C04 /* Assets.xcassets */; };
+		463444631DE2ABC700366C04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463444611DE2ABC700366C04 /* LaunchScreen.storyboard */; };
+		4634446E1DE2ABC700366C04 /* JustPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4634446D1DE2ABC700366C04 /* JustPayTests.swift */; };
+		463444791DE2ABC700366C04 /* JustPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463444781DE2ABC700366C04 /* JustPayUITests.swift */; };
+		46524FE41DFBC6970012889A /* JPUserTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46524FE31DFBC6970012889A /* JPUserTransaction.swift */; };
+		46524FE81DFBC7000012889A /* JPDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46524FE71DFBC7000012889A /* JPDBManager.swift */; };
+		46653B461E01AA8300A5838A /* JPSHA256HMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 46653B451E01AA8300A5838A /* JPSHA256HMAC.m */; };
+		46C501351E009741004D42F3 /* JPSenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C501341E009741004D42F3 /* JPSenderVC.swift */; };
+		46DF116D1DF6B6A80062366A /* JPUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DF116C1DF6B6A80062366A /* JPUserDefaults.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4634446A1DE2ABC700366C04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4634444A1DE2ABC600366C04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 463444511DE2ABC600366C04;
+			remoteInfo = JustPay;
+		};
+		463444751DE2ABC700366C04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4634444A1DE2ABC600366C04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 463444511DE2ABC600366C04;
+			remoteInfo = JustPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		461D9D821DF5AC5E007F721A /* JPConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPConstants.swift; sourceTree = "<group>"; };
+		461D9D841DF5ACD0007F721A /* JPRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPRequestManager.swift; sourceTree = "<group>"; };
+		461D9D861DF5ACE2007F721A /* JPResponseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPResponseManager.swift; sourceTree = "<group>"; };
+		461D9D881DF5B383007F721A /* JPServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPServerManager.swift; sourceTree = "<group>"; };
+		461D9D8B1DF5B5CF007F721A /* JPUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPUser.swift; sourceTree = "<group>"; };
+		463444521DE2ABC700366C04 /* JustPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		463444551DE2ABC700366C04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		463444571DE2ABC700366C04 /* JPLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPLoginVC.swift; sourceTree = "<group>"; };
+		4634445A1DE2ABC700366C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4634445D1DE2ABC700366C04 /* JustPay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JustPay.xcdatamodel; sourceTree = "<group>"; };
+		4634445F1DE2ABC700366C04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		463444621DE2ABC700366C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		463444641DE2ABC700366C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		463444691DE2ABC700366C04 /* JustPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4634446D1DE2ABC700366C04 /* JustPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustPayTests.swift; sourceTree = "<group>"; };
+		4634446F1DE2ABC700366C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		463444741DE2ABC700366C04 /* JustPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		463444781DE2ABC700366C04 /* JustPayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustPayUITests.swift; sourceTree = "<group>"; };
+		4634447A1DE2ABC700366C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46524FE31DFBC6970012889A /* JPUserTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPUserTransaction.swift; sourceTree = "<group>"; };
+		46524FE71DFBC7000012889A /* JPDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPDBManager.swift; sourceTree = "<group>"; };
+		46653B431E01AA8300A5838A /* JustPay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JustPay-Bridging-Header.h"; sourceTree = "<group>"; };
+		46653B441E01AA8300A5838A /* JPSHA256HMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSHA256HMAC.h; sourceTree = "<group>"; };
+		46653B451E01AA8300A5838A /* JPSHA256HMAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSHA256HMAC.m; sourceTree = "<group>"; };
+		46C501341E009741004D42F3 /* JPSenderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPSenderVC.swift; sourceTree = "<group>"; };
+		46DF116C1DF6B6A80062366A /* JPUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPUserDefaults.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4634444F1DE2ABC600366C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463444661DE2ABC700366C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463444711DE2ABC700366C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		461D9D811DF5AB46007F721A /* JPServerManager */ = {
+			isa = PBXGroup;
+			children = (
+				461D9D821DF5AC5E007F721A /* JPConstants.swift */,
+				461D9D841DF5ACD0007F721A /* JPRequestManager.swift */,
+				461D9D861DF5ACE2007F721A /* JPResponseManager.swift */,
+				461D9D881DF5B383007F721A /* JPServerManager.swift */,
+			);
+			name = JPServerManager;
+			sourceTree = "<group>";
+		};
+		461D9D8A1DF5B544007F721A /* JPUser */ = {
+			isa = PBXGroup;
+			children = (
+				461D9D8B1DF5B5CF007F721A /* JPUser.swift */,
+			);
+			name = JPUser;
+			sourceTree = "<group>";
+		};
+		463444491DE2ABC600366C04 = {
+			isa = PBXGroup;
+			children = (
+				463444541DE2ABC700366C04 /* JustPay */,
+				4634446C1DE2ABC700366C04 /* JustPayTests */,
+				463444771DE2ABC700366C04 /* JustPayUITests */,
+				463444531DE2ABC700366C04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		463444531DE2ABC700366C04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				463444521DE2ABC700366C04 /* JustPay.app */,
+				463444691DE2ABC700366C04 /* JustPayTests.xctest */,
+				463444741DE2ABC700366C04 /* JustPayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		463444541DE2ABC700366C04 /* JustPay */ = {
+			isa = PBXGroup;
+			children = (
+				463444551DE2ABC700366C04 /* AppDelegate.swift */,
+				463444591DE2ABC700366C04 /* Main.storyboard */,
+				4634445F1DE2ABC700366C04 /* Assets.xcassets */,
+				463444611DE2ABC700366C04 /* LaunchScreen.storyboard */,
+				463444641DE2ABC700366C04 /* Info.plist */,
+				4634445C1DE2ABC700366C04 /* JustPay.xcdatamodeld */,
+				463E79771DFD37B600ABEE3E /* JPViewControllers */,
+				46524FE21DFBC6520012889A /* JPDBManager */,
+				46DF116A1DF6B6140062366A /* JPPreferences */,
+				461D9D8A1DF5B544007F721A /* JPUser */,
+				461D9D811DF5AB46007F721A /* JPServerManager */,
+			);
+			path = JustPay;
+			sourceTree = "<group>";
+		};
+		4634446C1DE2ABC700366C04 /* JustPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				4634446D1DE2ABC700366C04 /* JustPayTests.swift */,
+				4634446F1DE2ABC700366C04 /* Info.plist */,
+			);
+			path = JustPayTests;
+			sourceTree = "<group>";
+		};
+		463444771DE2ABC700366C04 /* JustPayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				463444781DE2ABC700366C04 /* JustPayUITests.swift */,
+				4634447A1DE2ABC700366C04 /* Info.plist */,
+			);
+			path = JustPayUITests;
+			sourceTree = "<group>";
+		};
+		463E79771DFD37B600ABEE3E /* JPViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				463444571DE2ABC700366C04 /* JPLoginVC.swift */,
+				46C501341E009741004D42F3 /* JPSenderVC.swift */,
+			);
+			name = JPViewControllers;
+			sourceTree = "<group>";
+		};
+		46524FE21DFBC6520012889A /* JPDBManager */ = {
+			isa = PBXGroup;
+			children = (
+				46524FE31DFBC6970012889A /* JPUserTransaction.swift */,
+				46524FE71DFBC7000012889A /* JPDBManager.swift */,
+			);
+			name = JPDBManager;
+			sourceTree = "<group>";
+		};
+		46DF116A1DF6B6140062366A /* JPPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				46DF116C1DF6B6A80062366A /* JPUserDefaults.swift */,
+				46653B441E01AA8300A5838A /* JPSHA256HMAC.h */,
+				46653B451E01AA8300A5838A /* JPSHA256HMAC.m */,
+				46653B431E01AA8300A5838A /* JustPay-Bridging-Header.h */,
+			);
+			name = JPPreferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		463444511DE2ABC600366C04 /* JustPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4634447D1DE2ABC700366C04 /* Build configuration list for PBXNativeTarget "JustPay" */;
+			buildPhases = (
+				4634444E1DE2ABC600366C04 /* Sources */,
+				4634444F1DE2ABC600366C04 /* Frameworks */,
+				463444501DE2ABC600366C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JustPay;
+			productName = JustPay;
+			productReference = 463444521DE2ABC700366C04 /* JustPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		463444681DE2ABC700366C04 /* JustPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 463444801DE2ABC700366C04 /* Build configuration list for PBXNativeTarget "JustPayTests" */;
+			buildPhases = (
+				463444651DE2ABC700366C04 /* Sources */,
+				463444661DE2ABC700366C04 /* Frameworks */,
+				463444671DE2ABC700366C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4634446B1DE2ABC700366C04 /* PBXTargetDependency */,
+			);
+			name = JustPayTests;
+			productName = JustPayTests;
+			productReference = 463444691DE2ABC700366C04 /* JustPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		463444731DE2ABC700366C04 /* JustPayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 463444831DE2ABC700366C04 /* Build configuration list for PBXNativeTarget "JustPayUITests" */;
+			buildPhases = (
+				463444701DE2ABC700366C04 /* Sources */,
+				463444711DE2ABC700366C04 /* Frameworks */,
+				463444721DE2ABC700366C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				463444761DE2ABC700366C04 /* PBXTargetDependency */,
+			);
+			name = JustPayUITests;
+			productName = JustPayUITests;
+			productReference = 463444741DE2ABC700366C04 /* JustPayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4634444A1DE2ABC600366C04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = InHeap;
+				TargetAttributes = {
+					463444511DE2ABC600366C04 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
+					};
+					463444681DE2ABC700366C04 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 463444511DE2ABC600366C04;
+					};
+					463444731DE2ABC700366C04 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 463444511DE2ABC600366C04;
+					};
+				};
+			};
+			buildConfigurationList = 4634444D1DE2ABC600366C04 /* Build configuration list for PBXProject "JustPay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 463444491DE2ABC600366C04;
+			productRefGroup = 463444531DE2ABC700366C04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				463444511DE2ABC600366C04 /* JustPay */,
+				463444681DE2ABC700366C04 /* JustPayTests */,
+				463444731DE2ABC700366C04 /* JustPayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		463444501DE2ABC600366C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463444631DE2ABC700366C04 /* LaunchScreen.storyboard in Resources */,
+				463444601DE2ABC700366C04 /* Assets.xcassets in Resources */,
+				4634445B1DE2ABC700366C04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463444671DE2ABC700366C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463444721DE2ABC700366C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4634444E1DE2ABC600366C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46653B461E01AA8300A5838A /* JPSHA256HMAC.m in Sources */,
+				46DF116D1DF6B6A80062366A /* JPUserDefaults.swift in Sources */,
+				461D9D8C1DF5B5CF007F721A /* JPUser.swift in Sources */,
+				461D9D871DF5ACE2007F721A /* JPResponseManager.swift in Sources */,
+				46524FE81DFBC7000012889A /* JPDBManager.swift in Sources */,
+				46524FE41DFBC6970012889A /* JPUserTransaction.swift in Sources */,
+				461D9D891DF5B383007F721A /* JPServerManager.swift in Sources */,
+				463444581DE2ABC700366C04 /* JPLoginVC.swift in Sources */,
+				461D9D851DF5ACD0007F721A /* JPRequestManager.swift in Sources */,
+				4634445E1DE2ABC700366C04 /* JustPay.xcdatamodeld in Sources */,
+				463444561DE2ABC700366C04 /* AppDelegate.swift in Sources */,
+				461D9D831DF5AC5E007F721A /* JPConstants.swift in Sources */,
+				46C501351E009741004D42F3 /* JPSenderVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463444651DE2ABC700366C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4634446E1DE2ABC700366C04 /* JustPayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463444701DE2ABC700366C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463444791DE2ABC700366C04 /* JustPayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4634446B1DE2ABC700366C04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 463444511DE2ABC600366C04 /* JustPay */;
+			targetProxy = 4634446A1DE2ABC700366C04 /* PBXContainerItemProxy */;
+		};
+		463444761DE2ABC700366C04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 463444511DE2ABC600366C04 /* JustPay */;
+			targetProxy = 463444751DE2ABC700366C04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		463444591DE2ABC700366C04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4634445A1DE2ABC700366C04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		463444611DE2ABC700366C04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				463444621DE2ABC700366C04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4634447B1DE2ABC700366C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4634447C1DE2ABC700366C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4634447E1DE2ABC700366C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = JustPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InHeap.framework.JustPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JustPay/JustPay-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4634447F1DE2ABC700366C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = JustPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InHeap.framework.JustPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JustPay/JustPay-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		463444811DE2ABC700366C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JustPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InHeap.framework.JustPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustPay.app/JustPay";
+			};
+			name = Debug;
+		};
+		463444821DE2ABC700366C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JustPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InHeap.framework.JustPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustPay.app/JustPay";
+			};
+			name = Release;
+		};
+		463444841DE2ABC700366C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = JustPayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InHeap.framework.JustPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = JustPay;
+			};
+			name = Debug;
+		};
+		463444851DE2ABC700366C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = JustPayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InHeap.framework.JustPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = JustPay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4634444D1DE2ABC600366C04 /* Build configuration list for PBXProject "JustPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4634447B1DE2ABC700366C04 /* Debug */,
+				4634447C1DE2ABC700366C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4634447D1DE2ABC700366C04 /* Build configuration list for PBXNativeTarget "JustPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4634447E1DE2ABC700366C04 /* Debug */,
+				4634447F1DE2ABC700366C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		463444801DE2ABC700366C04 /* Build configuration list for PBXNativeTarget "JustPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463444811DE2ABC700366C04 /* Debug */,
+				463444821DE2ABC700366C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		463444831DE2ABC700366C04 /* Build configuration list for PBXNativeTarget "JustPayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463444841DE2ABC700366C04 /* Debug */,
+				463444851DE2ABC700366C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4634445C1DE2ABC700366C04 /* JustPay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4634445D1DE2ABC700366C04 /* JustPay.xcdatamodel */,
+			);
+			currentVersion = 4634445D1DE2ABC700366C04 /* JustPay.xcdatamodel */;
+			path = JustPay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4634444A1DE2ABC600366C04 /* Project object */;
+}
